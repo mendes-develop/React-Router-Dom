@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class Nav extends Component {
     render() {
@@ -6,10 +7,10 @@ export default class Nav extends Component {
             <div className="Nav">
                 <nav>
                     <ul className='nav-links'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>User</li>
-                    <li>Contact</li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/user">User</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
             </div>
